@@ -19,7 +19,7 @@ pipeline
 		{
 			steps
 			{
-				git 'https://github.com/RishabhVaishnavProjects/selenium-python-automation-framework-code.git'
+				checkout scm
 				script
 				{
 					bat(/pytest --browser chrome --url https:\/\/yatra.com --html=reportjenkins.html/)
